@@ -1,9 +1,17 @@
-/* Set the width of the side navigation to 250px */
 function openMenu() {
   document.getElementById("side-menu").style.width = "250px";
 }
 
-/* Set the width of the side navigation to 0 */
 function closeMenu() {
   document.getElementById("side-menu").style.width = "0";
 }
+
+$(window).scroll(function() {
+  var scroll = $(window).scrollTop();
+
+  if (scroll <= 10) {
+    $("#header").addClass("transparent");
+  } else {
+    $("#header").removeClass("transparent");
+  }
+});

@@ -12,6 +12,7 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  font-family: 'Montserrat', sans-serif;
 }
 
 #header {
@@ -25,8 +26,14 @@ body {
   align-items: center;
   padding: 5vh 10vw;
   z-index: 1;
+  transition: 0.5s;
   background: white;
   box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.5);
+}
+
+.transparent {
+  background-color: transparent !important;
+  box-shadow: none !important;
 }
 
 #header img {
@@ -71,11 +78,21 @@ body {
  margin-left: 50px;
 }
 
-#intro {
+.page {
   width: 80vw;
-  height: 80vh;
-  margin-top: 15vh;
-  padding: 0vh 10vw 5vh 10vw;
+  height: 75vh;
+  margin-top: 10vh;
+  padding: 5vh 10vw;
+}
+
+#intro {
+  height: 80vh !important;
+  margin-top: 15vh !important;
+  padding: 0vh 10vw 5vh 10vw !important;
+}
+
+#event {
+  background-color: rgba(73, 48, 96, 0.9);
 }
 
 @media screen and (max-height: 450px) {
