@@ -153,14 +153,18 @@ body {
 }
 
 #footer {
-  width: 100vw;
+  width: 80vw;
+  margin: 0 10vw;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
 }
 
 #footer img {
-  width: 40vw;
+  margin: 5vmin;
+  max-width: 40vw;
+  max-height: 10vh;
 }
 
 @media screen and (max-height: 450px) {
