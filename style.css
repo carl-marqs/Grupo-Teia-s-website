@@ -1,3 +1,7 @@
+* {
+  transition: 0.4s;
+}
+
 html {
   width: 100%;
   height: 100%;
@@ -15,6 +19,13 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+#top {
+  position: absolute;
+  display: hidden;
+  top: -9vh;
+  visibility: none;
+}
+
 #header {
   width: 80vw;
   height: 5vh;
@@ -25,9 +36,8 @@ body {
   align-items: center;
   padding: 2vh 10vw;
   z-index: 1;
-  transition: 0.5s;
   background: white;
-  box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.5);
+  box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.4);
 }
 
 .transparent {
@@ -36,43 +46,50 @@ body {
   padding: 5vh 10vw !important;
 }
 
-#header img, #header span {
-  height: 75%;
+#header a {
+  width: 18vw;
+  cursor: pointer;
+}
+
+#header span {
+  width: 3.5vw;
   cursor: pointer;
 }
 
 #side-menu {
- height: 100%;
- width: 0;
- position: fixed;
- z-index: 2;
- top: 0;
- right: 0;
- background-color: #493060;
- overflow-x: hidden;
- padding-top: 60px;
- transition: 0.5s;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  background-color: #493060;
+  overflow-x: hidden;
+  padding-top: 60px;
 }
 
 #side-menu a {
- padding: 8px 8px 8px 32px;
- text-decoration: none;
- font-size: 25px;
- color: white;
- display: block;
- transition: 0.3s;
+  display: block;
+  white-space: nowrap;
+  margin: 0 32px;
+  padding: 8px 0px;
+  border-top: 1px solid white;
+  color: white;
+  text-decoration: none;
+  font-size: 3.5vmax;
 }
 
 #side-menu a:hover {
- color: #f1f1f1;
+ color: #0098d8;
 }
 
 #side-menu .closebtn {
  position: absolute;
  top: 0;
- right: 25px;
- font-size: 36px;
- margin-left: 50px;
+ right: 0;
+ border-top: none;
+ font-size: 7.5vmax;
+ margin: 0 25px;
 }
 
 .page {
@@ -102,12 +119,12 @@ body {
   height: 12vh;
   align-self: flex-start;
   margin: 0;
-  font-size: 3vh;
+  font-size: 3vmax;
   font-weight: normal;
 }
 
 #event h1 font{
-  font-size: 5vh;
+  font-size: 5vmax;
   line-height: 100%;
 }
 
@@ -124,32 +141,45 @@ body {
   border-radius: 10px;
   background-color: #0098d8;
   color: white;
-  font-size: 1.4em;
+  font-size: 3vmax;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
-  text-transform: uppercase;
 }
 
 #actions h1 {
   height: 12vh;
   align-self: flex-start;
   margin: 0 0 0 5vw;
-  font-size: 4vh;
+  font-size: 4vmax;
 }
 
 #actions h1 font{
-  font-size: 6vh;
+  font-size: 6vmax;
   line-height: 100%;
 }
 
 .tag {
   width: 80vw;
   height: 15vh;
+  display: table;
   cursor: pointer;
   background-color: #493060;
   color: white;
-  font-weight: bold;
   text-align: center;
+  font-size: 3.5vmax;
+  font-weight: bold;
+}
+
+.tag p, .tag font {
+  display: table-cell;
+  vertical-align: middle
+}
+
+.tag font {
+  width: 80vw;
+  font-weight: normal;
+  font-size: 2.8vmax;
+  line-height: 80%;
 }
 
 #footer {

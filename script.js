@@ -15,3 +15,23 @@ $(window).scroll(function() {
     $("#header").removeClass("transparent");
   }
 });
+
+$(document).ready(function(){
+  $("a").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+
+      var hash = this.hash;
+
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top-vh(9)+1
+      }, 800, function(){});
+      closeMenu();
+    }
+  });
+});
+
+function vh(v) {
+  var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+  return (v * h) / 100;
+}
