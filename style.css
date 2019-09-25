@@ -1,5 +1,5 @@
 * {
-  transition: 0.4s;
+  transition: 5s;
 }
 
 html {
@@ -38,6 +38,7 @@ body {
   z-index: 1;
   background: white;
   box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.4);
+  transition: 0.4s;
 }
 
 .transparent {
@@ -66,7 +67,8 @@ body {
   right: 0;
   background-color: #493060;
   overflow-x: hidden;
-  padding-top: 60px;
+  padding-top: 75px;
+  transition: 0.5s ease;
 }
 
 #side-menu a {
@@ -77,11 +79,13 @@ body {
   border-top: 1px solid white;
   color: white;
   text-decoration: none;
-  font-size: 3.5vmax;
+  font-size: 3vmax;
+  transition: 0.4s;
 }
 
 #side-menu a:hover {
  color: #0098d8;
+ transition: 0.4s;
 }
 
 #side-menu .closebtn {
