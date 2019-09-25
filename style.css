@@ -53,6 +53,7 @@ body {
 
 #header span {
   width: 3.5vw;
+  padding: 10px 0 10px 20px;
   cursor: pointer;
 }
 
