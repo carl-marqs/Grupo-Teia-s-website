@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.0.2/dist/simpleParallax.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
 
     <title>t e i a</title>
@@ -18,69 +19,88 @@
   <body>
     <div id="top"></div>
 
-    <div id="header" class="transparent">
-      <a href="#top">
-        <img id="header_logo" src="img/logo.svg">
-      </a>
-      <span class="menu-anchor" onclick="openMenu()">
-        <img src="img/arrow.svg">
-      </span>
-    </div>
-
     <div id="side-menu">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">&times;</a>
+      <img class="closebtn" src="img/cross.svg" onclick="closeMenu()">
       <a href="#top">O PROJETO</a>
       <a href="#event">FESTIVAL</a>
       <a href="#actions">AÇÕES</a>
     </div>
 
-    <div id="intro" class="page">
-      <video width="100%" height="100%" autoplay controls >
-        <source src="" type="video/mp4">
-        <source src="" type="video/ogg">
-        Your browser does not support the video tag.
-      </video>
-    </div>
+    <div id="slider" data-type="background" data-speed="3" style="background-position: 40% 0px;">
+      <div id="header" class="transparent">
+        <a href="#top">
+          <img id="header_logo" src="img/logo.svg">
+        </a>
+        <span class="menu-anchor" onclick="openMenu()">
+          <img src="img/arrow.svg">
+        </span>
+      </div>
 
-    <div id="event" class="page">
-      <h1>1º festival<br>DE <b>VÍDEO<br><font>VERTICAL</font></b></h1>
-      <div id="event_vd_container">
-        <video width="100%" height="100%" autoplay controls >
+      <div id="intro" class="page">
+        <video autoplay controls >
           <source src="" type="video/mp4">
           <source src="" type="video/ogg">
           Your browser does not support the video tag.
         </video>
-      </div>
-      <button type="button">PARTICIPE!</button>
-    </div>
-
-    <div id="actions" class="page">
-      <h1>NOSSAS<br><font>AÇÕES</font></h1>
-
-      <div class="tag">
-        <img src="" onclick="">
-        <p>OFICINA</p>
-      </div>
-      <div class="tag">
-        <img src="" onclick="">
-        <p>ABERTURA<br><font>DE PROCESSO</font></p>
-      </div>
-      <div class="tag">
-        <img src="" onclick="">
-        <p>FESTIVAL</p>
-      </div>
-      <div class="tag">
-        <img src="" onclick="">
-        <p>MOSTRA</p>
+        <button type="button">SAIBA +</button>
       </div>
 
-    </div>
+      <div class="round-border-top"></div>
 
-    <div id="footer">
-      <img src="img/unicamp-logo.svg">
-      <img src="img/prg-logo.svg">
-      <img src="img/SAE-logo.svg">
-      <img src="img/aluno-artista-logo.svg">
+      <div id="event" class="page">
+        <h1>1º festival<br>DE <b>VÍDEODANÇA<br><font>VERTICAL</font></b></h1>
+        <div id="event_vd_container">
+          <video width="100%" height="100%" autoplay controls >
+            <source src="" type="video/mp4">
+            <source src="" type="video/ogg">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <button type="button">PARTICIPE!</button>
+      </div>
+
+      <div class="round-border-bottom"></div>
+
+      <div id="actions" class="page">
+        <h1>NOSSAS<br><font>AÇÕES</font></h1>
+
+        <a href="">
+          <table class="tag" background="img/still1.png">
+            <tr>
+              <td>OFICINA</td>
+            </tr>
+          </table>
+        </a>
+        <a href="">
+          <table class="tag" background="img/still2.png">
+            <tr>
+              <td>ABERTURAS<br><font>DE PROCESSO</font></td>
+            </tr>
+          </table>
+        </a>
+        <a href="">
+          <table class="tag" background="img/still3.png">
+            <tr>
+              <td>CONGRESSOS</td>
+            </tr>
+          </table>
+        </a>
+        <a href="">
+          <table class="tag" background="img/still4.png">
+            <tr>
+              <td>FESTIVAL</td>
+            </tr>
+          </table>
+        </a>
+
+      </div>
+
+      <div id="footer">
+        <img src="img/unicamp-logo.svg">
+        <img src="img/prg-logo.svg">
+        <img src="img/SAE-logo.svg">
+        <img src="img/aluno-artista-logo.svg">
+      </div>
     </div>
 
   </body>

@@ -35,3 +35,18 @@ function vh(v) {
   var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
   return (v * h) / 100;
 }
+
+function parallax() {
+	var $slider = document.getElementById("slider");
+
+	var yPos = window.pageYOffset / $slider.dataset.speed;
+	yPos = -yPos;
+
+	var coords = '40% '+ yPos + 'px';
+
+	$slider.style.backgroundPosition = coords;
+}
+
+window.addEventListener("scroll", function(){
+	parallax();
+});
