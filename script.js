@@ -11,8 +11,12 @@ $(window).scroll(function() {
 
   if (scroll <= 10) {
     $("#header").addClass("transparent");
+    $("#side-menu").addClass("links-height-fix");
+    $("#closebtn").addClass("cross-height-fix");
   } else {
     $("#header").removeClass("transparent");
+    $("#side-menu").removeClass("links-height-fix");
+    $("#side-menu #closebtn").removeClass("cross-height-fix");
   }
 });
 
