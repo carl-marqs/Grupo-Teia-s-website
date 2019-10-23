@@ -102,7 +102,7 @@ button:focus { outline:0; }
   margin-top: -1px;
   padding-top: 1px;
   background: url(img/background.svg) repeat center top fixed;
-  background-size: 285vw;
+  background-size: 300%;
   transition: none;
 }
 
@@ -152,26 +152,37 @@ button:focus { outline:0; }
   background-size: cover;
 }
 
-#event 
-{
-  height: 95vh;
-  margin-top: 0;
-  padding: 5vh 15vw !important;
-  background-color: rgba(73, 48, 96, 0.9);
-  color: white;
+#event {
+  height: 145vh;
+  background: url(img/curved-bg-1.svg) no-repeat center center;
+  background-size: 100vw;
+  
+  display: flex;
+  align-items: center;
 }
 
-#event img 
+#event_container 
 {
+  height: 100vh;
+  color: white;
+  padding: 15vh 10vw;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#event_container img {
   position: relative;
   left: 5vw;
 }
 
 #event_vd_container {
-  height: 55vh;
+  height: 60vh;
 }
 
-#event a button {
+#event_container a button {
   width: 70vw;
   height: 8vh;
   align-self: flex-end;
@@ -223,7 +234,7 @@ button:focus { outline:0; }
 
 #footer {
   width: 80vw;
-  margin: 0 10vw;
+  margin: 0 10vw 10vh 10vw;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -232,30 +243,43 @@ button:focus { outline:0; }
 
 #footer img {
   margin: 5vmin;
-  max-width: 40vw;
-  max-height: 10vh;
 }
 
 #festival-intro {
-  height: 100vh;
-  margin-top: 8vh !important;
-  padding: 5vh 15vw !important;
-  background-color: rgba(73, 48, 96, 0.9);
-  color: white;
+  height: 145vh;
+  margin-top: -11vh;
+  background: url(img/curved-bg-1.svg) no-repeat center center;
+  background-size: 100vw;
+  
+  display: flex;
+  align-items: center;
 }
 
-#festival-intro img
+#festival_container 
+{
+  height: 100vh;
+  width: 100%;
+  color: white;
+  padding: 15vh 10vw;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#festival_container img
 {
   position: relative;
   left: 5vw;
 }
 
-#festival-intro table {
+#festival_container table {
   width: 100%;
   text-align: center;
 }
 
-#festival-intro button {
+#festival_container button {
   display: inline-block;
   width: 32vw;
   padding: 10px;
