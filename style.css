@@ -243,6 +243,7 @@ button:focus { outline:0; }
 
 #footer img {
   margin: 5vmin;
+  width: 100%;
 }
 
 #festival-intro {
@@ -329,10 +330,6 @@ button:focus { outline:0; }
   width: 25vmin;
   border-radius: 50%;
   display: inline-block;
-}
-
-.circle img {
-
 }
 
 @media screen and (max-height: 450px) {
