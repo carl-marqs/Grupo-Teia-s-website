@@ -102,7 +102,7 @@ button:focus { outline:0; }
   margin-top: -1px;
   padding-top: 1px;
   background: url(img/background.svg) no-repeat center top fixed;
-  background-size: 260%;
+  background-size: 285vw;
   transition: none;
 }
 
@@ -154,7 +154,7 @@ button:focus { outline:0; }
 
 #event 
 {
-  height: 90vh;
+  height: 95vh;
   margin-top: 0;
   padding: 5vh 15vw !important;
   background-color: rgba(73, 48, 96, 0.9);
@@ -163,9 +163,8 @@ button:focus { outline:0; }
 
 #event img 
 {
-    fill: white;
-    left: 5vw;
-    position: relative;
+  position: relative;
+  left: 5vw;
 }
 
 #event_vd_container {
@@ -238,11 +237,17 @@ button:focus { outline:0; }
 }
 
 #festival-intro {
-  height: 90vh;
+  height: 100vh;
   margin-top: 8vh !important;
   padding: 5vh 15vw !important;
   background-color: rgba(73, 48, 96, 0.9);
   color: white;
+}
+
+#festival-intro img
+{
+  position: relative;
+  left: 5vw;
 }
 
 #festival-intro table {
@@ -261,19 +266,6 @@ button:focus { outline:0; }
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.4);
-}
-
-#festival-intro h1 {
-  height: 12vh;
-  align-self: flex-start;
-  margin: 0;
-  font-size: 3vmax;
-  font-weight: normal;
-}
-
-#festival-intro h1 font {
-  font-size: 6vmax;
-  line-height: 100%;
 }
 
 #festival_vd_container {
