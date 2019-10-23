@@ -6,7 +6,11 @@ function closeMenu() {
   document.getElementById("side-menu").style.width = "0";
 }
 
-$(window).scroll(function() {
+$(window).scroll(function () {
+  var myElem = document.getElementById('intro');
+  if (myElem === null) return;
+
+
   var scroll = $(window).scrollTop();
 
   if (scroll <= 10) {

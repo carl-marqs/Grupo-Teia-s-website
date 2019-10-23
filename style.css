@@ -159,17 +159,9 @@ button:focus { outline:0; }
   color: white;
 }
 
-#event h1 {
-  height: 12vh;
-  align-self: flex-start;
-  margin: 0;
-  font-size: 3vmax;
-  font-weight: normal;
-}
-
-#event h1 font{
-  font-size: 6vmax;
-  line-height: 100%;
+#event img 
+{
+    fill: white;
 }
 
 #event_vd_container {
@@ -243,6 +235,7 @@ button:focus { outline:0; }
 
 #festival-intro {
   height: 90vh;
+  margin-top: 8vh !important;
   padding: 5vh 15vw !important;
   background-color: rgba(73, 48, 96, 0.9);
   color: white;
@@ -312,14 +305,14 @@ button:focus { outline:0; }
 }
 
 .circle {
-  height: auto;
-  width: 100%;
+  height: 25vmin;
+  width: 25vmin;
   border-radius: 50%;
   display: inline-block;
 }
 
 .circle img {
-  margin: 25%;
+
 }
 
 @media screen and (max-height: 450px) {
