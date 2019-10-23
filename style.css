@@ -1,0 +1,321 @@
+* {
+  transition: 18000s;
+}
+
+a {text-decoration: none;}
+
+body {
+  margin: 0 auto;
+  font-family: 'Montserrat', sans-serif;
+}
+
+button:focus { outline:0; }
+
+#top {
+  position: absolute;
+  top: -9vh;
+  display: hidden;
+  visibility: none;
+}
+
+#side-menu {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  background-color: #493060;
+  overflow-x: hidden;
+  padding-top: 11vh;
+  transition: 0.5s ease;
+}
+
+#side-menu a {
+  display: block;
+  white-space: nowrap;
+  margin: 0 10vw;
+  padding: 8px 0px;
+  overflow: hidden;
+  border-top: 1px solid white;
+  color: white;
+  text-decoration: none;
+  font-size: 3vmax;
+  transition: 0.4s;
+}
+
+#side-menu a:hover {
+ color: #0098d8;
+ transition: 0.4s;
+}
+
+#side-menu #closebtn {
+ position: absolute;
+ top: 1.5vh;
+ right: 5vw;
+ width: 5vw;
+ border-top: none;
+ padding: 15px;
+ transition: 0.5s ease;
+}
+
+#header {
+  width: 80vw;
+  top: 0;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2vh 10vw;
+  z-index: 1;
+  background: white;
+  box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.4);
+  transition: 0.4s;
+}
+
+#header a {
+  width: 18vw;
+  cursor: pointer;
+}
+
+#header span {
+  width: 3.5vw;
+  padding: 10px 0 10px 20px;
+  cursor: pointer;
+}
+
+.transparent {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  padding: 5vh 10vw !important;
+}
+
+.cross-height-fix {
+  top: 4.5vh !important;
+}
+
+.links-height-fix {
+  padding-top: 15vh !important;
+}
+
+#slider {
+  margin-top: -1px;
+  padding-top: 1px;
+  background: url(img/background.svg) no-repeat center top fixed;
+  background-size: 260%;
+  transition: none;
+}
+
+.page {
+  height: 81vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5vh 10vw;
+}
+
+#intro {
+  margin-top: 15vh !important;
+  padding: 0vh 10vw 5vh 10vw !important;
+}
+
+#intro video {
+  width: 100%;
+  height: 85%;
+}
+
+#intro button {
+  height: 20%;
+  width: 60%;
+  height: 8vh;
+  border: none;
+  border-radius: 35px;
+  background-color: #8f2958;
+  color: white;
+  font-size: 3vmax;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+
+.round-border-top {
+  height: 12vh;
+  width: 100vw;
+  background: url(img/purple-border-top.svg) no-repeat center top;
+  background-size: cover;
+}
+
+.round-border-bottom {
+  height: 12vh;
+  width: 100vw;
+  background: url(img/purple-border-bottom.svg) no-repeat center bottom;
+  background-size: cover;
+}
+
+#event {
+  margin-top: 0;
+  padding: 5vh 15vw !important;
+  background-color: rgba(73, 48, 96, 0.9);
+  color: white;
+}
+
+#event img 
+{
+    fill: white;
+}
+
+#event_vd_container {
+  height: 55vh;
+}
+
+#event a button {
+  width: 70vw;
+  height: 8vh;
+  align-self: flex-end;
+  border: none;
+  border-radius: 10px;
+  background-color: #0098d8;
+  color: white;
+  font-size: 3vmax;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+
+#actions h1 {
+  height: 12vh;
+  align-self: flex-start;
+  margin: 0 0 0 5vw;
+  font-size: 4vmax;
+}
+
+#actions h1 font{
+  font-size: 6vmax;
+  line-height: 100%;
+}
+
+.tag {
+  width: 80vw;
+  height: 15vh;
+  display: table;
+  cursor: pointer;
+  background-color: #493060;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  font-size: 3.5vmax;
+  font-weight: bold;
+}
+
+.tag td {
+  padding: 0;
+}
+
+.tag font {
+  width: 80vw;
+  font-weight: normal;
+  font-size: 2.8vmax;
+  line-height: 80%;
+}
+
+#footer {
+  width: 80vw;
+  margin: 0 10vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#footer img {
+  margin: 5vmin;
+  max-width: 40vw;
+  max-height: 10vh;
+}
+
+#festival-intro {
+  height: 90vh;
+  margin-top: 8vh !important;
+  padding: 5vh 15vw !important;
+  background-color: rgba(73, 48, 96, 0.9);
+  color: white;
+}
+
+#festival-intro table {
+  width: 100%;
+  text-align: center;
+}
+
+#festival-intro button {
+  display: inline-block;
+  width: 32vw;
+  padding: 10px;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  font-size: 3vmin;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.4);
+}
+
+#festival-intro h1 {
+  height: 12vh;
+  align-self: flex-start;
+  margin: 0;
+  font-size: 3vmax;
+  font-weight: normal;
+}
+
+#festival-intro h1 font {
+  font-size: 6vmax;
+  line-height: 100%;
+}
+
+#festival_vd_container {
+  height: 65vh;
+}
+
+#festival-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 90vh;
+  padding: 0 10vw 25vh 10vw;
+  font-size: 2vmax;
+}
+
+#festival-info table {
+  width: 100%;
+  height: 80vh;
+}
+
+.table-text {
+  padding-left: 5%;
+}
+
+#festival-info a button {
+  border: none;
+  border-radius: 15px;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.4);
+}
+
+.circle {
+  height: 25vmin;
+  width: 25vmin;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.circle img {
+
+}
+
+@media screen and (max-height: 450px) {
+ .sidenav {padding-top: 15px;}
+ .sidenav a {font-size: 18px;}
+}
