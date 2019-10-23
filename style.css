@@ -101,7 +101,7 @@ button:focus { outline:0; }
 #slider {
   margin-top: -1px;
   padding-top: 1px;
-  background: url(img/background.svg) no-repeat center top fixed;
+  background: url(img/background.svg) repeat center top fixed;
   background-size: 285vw;
   transition: none;
 }
