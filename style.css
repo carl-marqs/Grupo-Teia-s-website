@@ -152,7 +152,9 @@ button:focus { outline:0; }
   background-size: cover;
 }
 
-#event {
+#event 
+{
+  height: 90vh;
   margin-top: 0;
   padding: 5vh 15vw !important;
   background-color: rgba(73, 48, 96, 0.9);
@@ -162,6 +164,8 @@ button:focus { outline:0; }
 #event img 
 {
     fill: white;
+    left: 5vw;
+    position: relative;
 }
 
 #event_vd_container {
@@ -281,8 +285,8 @@ button:focus { outline:0; }
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  height: 90vh;
-  padding: 0 10vw 25vh 10vw;
+  height: 105vh;
+  padding: 0 10vw 10vh 10vw;
   font-size: 2vmax;
 }
 
