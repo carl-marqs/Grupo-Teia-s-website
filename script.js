@@ -8,7 +8,7 @@ function closeMenu() {
 
 $(window).scroll(function () {
   var myElem = document.getElementById('intro');
-  if (myElem === null) return;
+  if (myElem === null) { return; }
 
 
   var scroll = $(window).scrollTop();
