@@ -1,7 +1,6 @@
 body {
   width: 100%;
   margin: 0 auto;
-  overflow-x: hidden;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -44,7 +43,6 @@ button:focus { outline:0; }
   padding-top: 1px;
   background: url(img/background.svg) repeat center top fixed;
   background-size: 300%;
-  transition: none;
 }
 
 #footer {
