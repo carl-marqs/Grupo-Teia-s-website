@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="acoes.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.0.2/dist/simpleParallax.min.js"></script>
@@ -20,16 +21,73 @@
 
     <div id="slider" data-type="background" data-speed="3" style="background-position: 40% 0px;">
 
+      <div id="top"></div>
+
+      <div id="side-menu" class="links-height-fix">
+        <img id="closebtn" class="cross-height-fix" src="img/cross.svg" onclick="closeMenu()">
+        <a href="#oficinas">OFICINAS</a>
+        <a href="#aberturas">ABERTURAS DE PROCESSO</a>
+        <a href="#congressos">CONGRESSOS</a>
+        <a href="#festival">FESTIVAL</a>
+      </div>
+
       <div id="header">
         <a href="index.html">
           <img id="header_logo" src="img/logo.svg">
         </a>
+        <span class="menu-anchor" onclick="openMenu()">
+          <img src="img/arrow.svg">
+        </span>
       </div>
 
-      <h1>NOSSAS<br><font>AÇÕES</font></h1>
+      <div style="margin-left: 40px; font-size: 0.9em;">
+        <br>
+        <h1>NOSSAS<br>
+          <font style="font-size: 1.5em;">AÇÕES</font>
+        </h1>
+        <br>
+      </div>
 
-      <div id="footer">
-        <img src="img/logos-group.svg">
+      <div id="oficinas">
+        <img class="cover" src="" background-color="black">
+        <div class="text">
+          <h2 style="font-size: 2em;">OFICINAS</h2>
+          De caráter teórico-prático, a oficina propôs contato com a linguagem da videodança, trazendo perspectivas históricas, teóricas e referências audiovisuais. A partir disso, convidamos os participantes a experimentarem e criarem com o smartphone e em formato vertical. A carga horária total foi de 8 horas.
+        </div>
+        <br>
+        <center><div id="oficina_vd_container">
+        </div></center>
+      <br><br><hr><br>
+      </div>
+
+      <div id="aberturas">
+        <img class="cover" src="" background-color="black">
+        <div class="text">
+          <h2><font style="font-size: 1.45em;">ABERTURAS</font><br>
+          <font style="font-size: 1.15em; font-weight: normal;">DE PROCESSO</font></h2>
+          Verticalidade da imagem, ferramentas tecnológicas e simultaneidade. Quais as potencialidades presentes nas redes sociais que podem vir de encontro com a dança? Parte da nossa pesquisa tem sido trabalhar o Instagram como plataforma criativa para a concepção em dança. Realizamos performances transmitidas ao vivo através do Instagram.
+          <br><br>
+          <img class="img" src="">
+          <br><br>
+          <img class="img" src="">
+        </div>
+      <br><br><hr><br>
+      </div>
+
+      <div id="congressos">
+        <img class="cover" src="" background-color="black">
+        <div class="text">
+          <h2 style="font-size: 2em;">CONGRESSOS</h2>
+        </div>
+      <br><br><hr><br>
+      </div>
+
+      <div id="festival">
+        <img class="cover" src="" background-color="black">
+        <div class="text">
+          <h2 style="font-size: 2em;">FESTIVAL</h2>
+        </div>
+      <br><br><br><br>
       </div>
     </div>
 

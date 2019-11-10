@@ -13,7 +13,7 @@ $(window).scroll(function () {
 
   var scroll = $(window).scrollTop();
 
-  if (scroll <= 10) {
+  if (scroll <= 0) {
     $("#header").addClass("transparent");
     $("#side-menu").addClass("links-height-fix");
     $("#closebtn").addClass("cross-height-fix");
